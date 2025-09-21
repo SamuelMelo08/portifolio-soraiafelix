@@ -1,12 +1,15 @@
+import About from "@/components/sessions/About";
 import Hero from "@/components/sessions/Hero";
 
 export default function Home() {
 
   return (
 
-    <div>
+    <div className="scroll-smooth">
 
-      <Hero/>
+      <Hero id="#"/>
+
+      <About id="about"/>
       
     </div>
 
