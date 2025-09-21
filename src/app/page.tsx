@@ -1,3 +1,4 @@
+import Hero from "@/components/sessions/Hero";
 
 export default function Home() {
 
@@ -5,8 +6,8 @@ export default function Home() {
 
     <div>
 
-      <p>Aqui começa o projeto</p>
-
+      <Hero/>
+      
     </div>
 
   )
