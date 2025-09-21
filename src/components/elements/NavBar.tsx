@@ -16,7 +16,7 @@ export default function NavbarDemo() {
   const navItems = [
     {
       name: "Sobre mim",
-      link: "#features",
+      link: "#about",
     },
     {
       name: "Serviços",
