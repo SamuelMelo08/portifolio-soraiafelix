@@ -13,9 +13,9 @@ export default function CardAbout() {
 
     return (
 
-        <Card className="w-full max-w-[600px] mx-auto mb-5 mt-10">
+        <div className="w-full max-w-[600px] mx-auto mb-5 flex flex-col gap-5">
 
-            <CardHeader className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center">
                 
                 <Image
                     src="/image01.jpg"
@@ -25,11 +25,11 @@ export default function CardAbout() {
                     className="rounded-full"
                 />
                 
-                <CardTitle className="text-[25px] text-center">Sobre mim</CardTitle>
+                <p className="text-[25px] text-center font-medium">Sobre mim</p>
 
-            </CardHeader>
+            </div>
 
-            <CardContent className="px-5 md:px-10 text-center">
+            <div className="px-5 md:px-10 text-center">
 
                 <p className="text-[16px] md:text-[20px]">
 
@@ -43,9 +43,9 @@ export default function CardAbout() {
                     estratégia e propósito.
 
                 </p>
-            </CardContent>
+            </div>
 
-        </Card>
+        </div>
 
 
     )   

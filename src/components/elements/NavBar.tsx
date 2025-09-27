@@ -20,7 +20,7 @@ export default function NavbarDemo() {
     },
     {
       name: "Serviços",
-      link: "#pricing",
+      link: "#services",
     },
     {
       name: "Contatos",
