@@ -24,7 +24,7 @@ export default function NavbarDemo() {
     },
     {
       name: "Contatos",
-      link: "#contact",
+      link: "#contatos",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function NavbarDemo() {
 
   return (
 
-    <div className="w-full fixed">
+    <div className="w-full fixed z-50">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>

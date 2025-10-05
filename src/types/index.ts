@@ -1,3 +1,8 @@
 export type PropsSession = {
-    id: string
+    id: string;
+}
+
+export type PropsCardService = {
+    title: string;
+    description: string;
 }

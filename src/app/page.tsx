@@ -14,6 +14,8 @@ export default function Home() {
       
       <Services id="services"/>
 
+      <About id="about"/>
+
     </div>
 
   )

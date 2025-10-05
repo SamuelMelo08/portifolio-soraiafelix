@@ -9,13 +9,13 @@ export default function About({ id }: PropsSession) {
       id={id}
     >
         
-      <div className="w-full lg:w-1/2 h-full flex justify-center items-center py-10 px-5">
+      <div className="w-full lg:w-1/2 h-full flex justify-center items-center py-5  px-5">
         <CardAbout />
       </div>
 
       <div className="w-full lg:w-1/2 h-full">
 
-        <div className="w-full h-full py-5 px-5">
+        <div className="w-full h-full px-5">
           <video
             src={"/Soraia-Felix-Video.mp4"}
             autoPlay
