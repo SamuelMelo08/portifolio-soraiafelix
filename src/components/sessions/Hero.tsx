@@ -45,7 +45,11 @@ export default function({id}: PropsSession) {
 
                     </div>
 
-                    <Button variant={"newButton"} size={"default"} className="mt-5"> Saiba mais </Button>
+                    <Button variant={"newButton"} size={"default"} className="mt-5 px-10"> 
+
+                        <a href="#about" > Saiba mais </a> 
+                        
+                    </Button>
 
                 </div>
 

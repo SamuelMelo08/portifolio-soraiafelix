@@ -6,9 +6,9 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { PropsCardService } from "@/types"
-import { Button } from "../ui/button"
+import ButtonService from "./ButtonService"
 
-export default function CardService({ title, description }: PropsCardService) {
+export default function CardService({ title, description, messsage }: PropsCardService) {
   return (
     <Card className="h-full flex flex-col justify-between">
 
@@ -20,7 +20,6 @@ export default function CardService({ title, description }: PropsCardService) {
 
             </CardHeader>
 
-            {/* Faz o conteúdo crescer pra empurrar o botão */}
             <CardContent className="flex-1">
 
             <p>{description}</p>
@@ -31,9 +30,7 @@ export default function CardService({ title, description }: PropsCardService) {
 
       <CardFooter className="flex justify-center mt-auto">
 
-        <Button variant="newButton" size="default" className="px-10">
-          Acessar
-        </Button>
+        <ButtonService text={messsage}/>
         
       </CardFooter>
     </Card>
