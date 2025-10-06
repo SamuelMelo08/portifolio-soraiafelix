@@ -13,9 +13,7 @@ export default function Home() {
       <About id="about"/>
       
       <Services id="services"/>
-
-      <About id="about"/>
-
+      
     </div>
 
   )

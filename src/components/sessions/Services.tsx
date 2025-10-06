@@ -1,8 +1,6 @@
 "use client"
 
 import { PropsSession } from "@/types"
-import CardService from "../elements/CardService"
-import { useState } from "react"
 import CardSession from "../elements/CardSession"
 
 
@@ -20,7 +18,7 @@ export default function Services ({id}: PropsSession) {
 
             </div>
 
-            {/*  */}
+          
             <div className="w-full px-4 relative py-5 flex justify-center items-center">
 
                 <CardSession/>
