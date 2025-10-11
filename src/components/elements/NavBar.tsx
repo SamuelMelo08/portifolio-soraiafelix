@@ -24,7 +24,7 @@ export default function NavbarDemo() {
     },
     {
       name: "Contatos",
-      link: "#contatos",
+      link: "#contacts",
     },
   ];
 

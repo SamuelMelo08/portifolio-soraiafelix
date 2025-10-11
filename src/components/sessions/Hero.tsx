@@ -1,13 +1,12 @@
 import Image from "next/image"
 import { Button } from "../ui/button"
-import { PropsSession } from "@/types"
 
-export default function({id}: PropsSession) {
+export default function() {
     
 
     return (
 
-        <div className="w-full h-screen shadow-[0_4px_15px_-1px_rgba(0,0,0,0.4)] mb-10" id={id}>
+        <div className="w-full h-screen shadow-[0_4px_15px_-1px_rgba(0,0,0,0.4)]" id="#">
 
             <div className="flex flex-col gap-5 justify-center items-center w-full h-screen px-5 bg-[#fff8ed]">
 
