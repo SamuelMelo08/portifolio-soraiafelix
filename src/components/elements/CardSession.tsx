@@ -90,8 +90,8 @@ export default function CardSession() {
         ))}
       </CarouselContent>
 
-      <CarouselPrevious className="ml-5 lg:ml-0"/>
-      <CarouselNext className="mr-5 lg:mr-0 "/>
+      <CarouselPrevious className="ml-5 lg:ml-0 border-none shadow-md shadow-black/40 hover:scale-106 transition-all"/>
+      <CarouselNext className="mr-5 lg:mr-0 border-none shadow-md shadow-black/40 hover:scale-104 transition-all"/>
     </Carousel>
   )
 }

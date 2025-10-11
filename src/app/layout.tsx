@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
 import "./globals.css";
 import NavbarDemo from "@/components/elements/NavBar";
+import { Fraunces } from 'next/font/google'
+
+export const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 const heebo = Heebo({
   variable: "--font-heebo",

@@ -10,7 +10,7 @@ import ButtonService from "./ButtonService"
 
 export default function CardService({ title, description, messsage }: PropsCardService) {
   return (
-    <Card className="h-full flex flex-col justify-between">
+    <Card className="h-full flex flex-col justify-between hover:scale-102 transition-all">
 
       <div>
 

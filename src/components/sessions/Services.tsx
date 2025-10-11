@@ -1,15 +1,14 @@
 "use client"
 
-import { PropsSession } from "@/types"
 import CardSession from "../elements/CardSession"
 
 
-export default function Services ({id}: PropsSession) {
+export default function Services () {
     
 
     return (
 
-        <div className="w-full px-5 py-5 flex flex-col items-center justify-center bg-[#b69c77a9]" id={id}>
+        <div className="w-full px-5 py-10 flex flex-col items-center justify-center bg-[#e9dfc6]" id="services">
             
             {/* Title */}
             <div>
