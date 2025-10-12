@@ -1,4 +1,5 @@
 import About from "@/components/sessions/About";
+import Contacts from "@/components/sessions/Contacts";
 import Footer from "@/components/sessions/footer";
 import Hero from "@/components/sessions/Hero";
 import Services from "@/components/sessions/Services";
@@ -14,6 +15,8 @@ export default function Home() {
       <About/>
       
       <Services/>
+
+      <Contacts/>
 
       <Footer/>
       
