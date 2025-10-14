@@ -5,12 +5,7 @@ import ButtonContact from "./ButtonContact";
 export default function ButtonsSession() {
   return (
     <div
-      className="
-        flex flex-col items-center gap-3
-        shadow-md rounded-xl shadow-black/30
-        py-6 px-6 sm:px-10 md:px-16 lg:px-20
-        w-full max-w-md mx-auto
-      "
+      className="flex flex-wrap lg:flex-col items-center gap-8 justify-center"
     >
       <ButtonContact
         text="Whatsapp"
