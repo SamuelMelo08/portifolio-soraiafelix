@@ -37,7 +37,16 @@ export default function FormContacts() {
     })
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values)
+        
+        const message = `Olá meu nome é ${values.name} e gostaria de falar sobre: ${values.message}`.trim()
+        
+        const whatsappNumber = "5588996837233"
+        const encodedMessage = encodeURIComponent(message)
+
+        const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
+
+        window.open(whatsappUrl, "_blank")
+            
     }
 
     return (

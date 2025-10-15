@@ -11,9 +11,15 @@ interface PropsButton {
 
 export default function ButtonContact({icon, text, href}: PropsButton) {
 
+    const isMail = href.startsWith("mailto:");
+
     return (
 
-        <a href={href} target="_blank">
+        <a 
+            href={href} 
+            target={isMail ? undefined : "_blank"} 
+            rel={isMail ? undefined : "noreferrer"}    
+        >
             <Button variant={"newButton"} className="w-70 py-5">
                 
                 <span>{icon}</span>
