@@ -21,7 +21,7 @@ export default function ButtonsSession() {
 
       <ButtonContact
         text="E-mail"
-        href="#"
+        href="mailto:soraiacfelix@gmail.com"
         icon={<SiGmail className="!h-5 !w-5" />}
       />
 
