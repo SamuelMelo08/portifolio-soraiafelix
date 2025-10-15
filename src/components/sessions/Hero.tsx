@@ -39,7 +39,7 @@ export default function Hero() {
                     <div className="text-center mt-5">
 
                         <span className="text-[18px] md:text-[20px] leading-5">
-                            "Negócios não crescem sozinhos — <br></br> eles crescem com líderes que crescem"
+                            {`"Negócios não crescem sozinhos —`} <br></br> {`eles crescem com líderes que crescem"`}
                         </span>
 
                     </div>
