@@ -18,18 +18,27 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "../ui/textarea"
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  name: z.string().min(2, {
+    message: "Nome muito curto",
   }),
+  message: z.string().min(10, {
+    message: "A mensagem é muito curta"
+  })
 })
-
-const onSubmit = () => {
-    console.log("")
-}
 
 export default function FormContacts() {
   
-    const form = useForm()
+    const form = useForm<z.infer<typeof formSchema>>({
+        resolver: zodResolver(formSchema),
+        defaultValues: {
+        name: "",
+        message: "",
+        },
+    })
+
+    function onSubmit(values: z.infer<typeof formSchema>) {
+        console.log(values)
+    }
 
     return (
 
