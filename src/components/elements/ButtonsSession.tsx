@@ -4,6 +4,7 @@ import ButtonContact from "./ButtonContact";
 
 export default function ButtonsSession() {
   return (
+
     <div
       className="flex flex-wrap lg:flex-col items-center gap-8 justify-center"
     >
@@ -21,7 +22,7 @@ export default function ButtonsSession() {
 
       <ButtonContact
         text="E-mail"
-        href="#"
+        href="mailto:soraiacfelix@gmail.com"
         icon={<SiGmail className="!h-5 !w-5" />}
       />
 
@@ -31,5 +32,6 @@ export default function ButtonsSession() {
         icon={<FaLinkedinIn className="!h-5 !w-5" />}
       />
     </div>
+    
   );
 }
