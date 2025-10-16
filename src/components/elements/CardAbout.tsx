@@ -34,6 +34,7 @@ export default function CardAbout() {
                     estratégia e propósito.
 
                 </p>
+                
             </div>
 
         </div>

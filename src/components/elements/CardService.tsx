@@ -9,6 +9,7 @@ import { PropsCardService } from "@/types"
 import ButtonService from "./ButtonService"
 
 export default function CardService({ title, description, messsage }: PropsCardService) {
+
   return (
     <Card className="h-full flex flex-col justify-between hover:scale-102 transition-all">
 
@@ -16,13 +17,13 @@ export default function CardService({ title, description, messsage }: PropsCardS
 
             <CardHeader>
 
-            <CardTitle className="text-[18px] mb-2">{title}</CardTitle>
+              <CardTitle className="text-[18px] mb-2">{title}</CardTitle>
 
             </CardHeader>
 
             <CardContent className="flex-1">
 
-            <p>{description}</p>
+              <p>{description}</p>
             
             </CardContent>
 
@@ -33,6 +34,7 @@ export default function CardService({ title, description, messsage }: PropsCardS
         <ButtonService text={messsage}/>
         
       </CardFooter>
+
     </Card>
   )
 }

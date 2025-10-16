@@ -73,6 +73,7 @@ export default function CardSession() {
     const [services, setServices] = React.useState(allServices)
 
   return (
+
     <Carousel opts={{ align: "center" }} className="w-full max-w-5xl">
 
       <CarouselContent>
@@ -93,5 +94,6 @@ export default function CardSession() {
       <CarouselPrevious className="ml-5 lg:ml-0 border-none shadow-md shadow-black/40 hover:scale-106 transition-all"/>
       <CarouselNext className="mr-5 lg:mr-0 border-none shadow-md shadow-black/40 hover:scale-104 transition-all"/>
     </Carousel>
+    
   )
 }
