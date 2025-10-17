@@ -39,7 +39,7 @@ export default function FormContacts() {
         
         const message = `Olá meu nome é ${values.name} e gostaria de falar sobre: ${values.message}`.trim()
         
-        const whatsappNumber = "5588996837233"
+        const whatsappNumber = "+5585999688000"
         const encodedMessage = encodeURIComponent(message)
 
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`
