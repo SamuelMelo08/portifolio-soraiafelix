@@ -8,12 +8,12 @@ export default function Services () {
 
     return (
 
-        <div className="w-full px-5 py-10 flex flex-col items-center justify-center bg-[#e9dfc6]" id="services">
+        <div className="w-full px-5 py-10 flex flex-col items-center justify-center bg-[#f5ebdc]" id="services">
             
             {/* Title */}
             <div>
                 
-                <h1 className="text-white text-[30px] font-medium"> Serviços </h1>
+                <h1 className="text-[30px] font-medium"> Serviços </h1>
 
             </div>
 

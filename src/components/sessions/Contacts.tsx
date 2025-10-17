@@ -11,7 +11,7 @@ export default function Contacts() {
             {/* titulo */}
             <div>
 
-                <h1 className="text-[#B69C77] text-[30px] font-medium">Contatos</h1>
+                <h1 className="text-[30px] font-medium">Contatos</h1>
 
             </div>
 
@@ -19,8 +19,8 @@ export default function Contacts() {
 
                 <div className="flex flex-col gap-5 w-full rounded-xl shadow-md shadow-black/30 px-5 py-6">
                     
-                    <h1 className="text-[24px] text-[#B69C77] font-medium">
-                        Envie uma mensagem
+                    <h1 className="text-[24px] font-medium">
+                        Envie uma mensagem:
                     </h1>
 
                     <FormContatc/>
@@ -30,8 +30,8 @@ export default function Contacts() {
                 {/* contatos (botões*/}
                 <div className="flex flex-col gap-10 items-start w-full shadow-md rounded-xl shadow-black/30 py-6 px-5 px-5">
 
-                    <h1 className="text-[24px] text-[#B69C77] font-medium">
-                        Acesse minhas redes sociais
+                    <h1 className="text-[24px] font-medium">
+                        Acesse minhas redes sociais:
                     </h1>
 
                     <div className="flex justify-center items-center w-full">

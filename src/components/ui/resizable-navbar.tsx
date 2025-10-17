@@ -129,8 +129,8 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
           href={item.link}
           className="relative px-4 py-2 text-neutral-600 dark:text-neutral-300 
                      hover:text-white dark:hover:text-white 
-                     hover:bg-black/30 dark:hover:bg-neutral-800 
-                     rounded-md transition"
+                     hover:bg-[#B69C77] dark:hover:bg-neutral-800 
+                     rounded-md transition-discrete duration-300"
         >
           {item.name}
         </a>
