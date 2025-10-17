@@ -16,12 +16,18 @@ export default function About() {
 
         <div className="w-full h-full px-5 lg:px-10">
           <video
-            src={"/Soraia-Felix-Video.mp4"}
+            src={"/Soraia-Felix-Video.webm"}
             autoPlay
             loop
             muted
+            playsInline
+            preload="auto"
+            aria-label="Video de apresentação"
             className="w-full h-140 object-cover rounded-[20px]"
-          />
+          >
+            <source src="/Soraia-Felix-Video.webm" type="video/webm" />
+            Seu navegador não suporta o elemento de vídeo.
+          </video>
         </div>
 
       </div>
