@@ -7,10 +7,10 @@ export default function Footer() {
 
             <div className="text-center">
                 ©2025 Soraia Felix. Todos os direitos reservados. 
-                —<a 
+                — <a 
                     href="https://github.com/SamuelMelo08"
                     target="_blank"> 
-                        Desenvolvido por Samuel Melo 
+                        Desenvolvido por Samuel Melo.
                 </a>
             </div>
 
