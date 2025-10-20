@@ -8,7 +8,7 @@ export default function Services () {
 
     return (
 
-        <div className="w-full px-5 py-10 flex flex-col items-center justify-center bg-[#f5ebdc]" id="services">
+        <div className="w-full px-5 py-10 flex flex-col items-center justify-center bg-cream" id="services">
             
             {/* Title */}
             <div>
@@ -17,7 +17,7 @@ export default function Services () {
 
             </div>
 
-          
+            {/* Session */}
             <div className="w-full px-4 relative py-5 flex justify-center items-center">
 
                 <CardSession/>
