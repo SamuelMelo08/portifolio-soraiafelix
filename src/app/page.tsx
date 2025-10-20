@@ -2,7 +2,7 @@
 
 import About from "@/components/sessions/About";
 import Contacts from "@/components/sessions/Contacts";
-import Footer from "@/components/sessions/Footer";
+import Footer from "@/components/sessions/footer";
 import Hero from "@/components/sessions/Hero";
 import Phrase from "@/components/sessions/Phrase";
 import Services from "@/components/sessions/Services";
