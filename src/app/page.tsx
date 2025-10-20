@@ -1,5 +1,6 @@
 "use client"
 
+import FloatingButton from "@/components/elements/FloatingButton";
 import About from "@/components/sessions/About";
 import Contacts from "@/components/sessions/Contacts";
 import Footer from "@/components/sessions/footer";
@@ -13,8 +14,10 @@ export default function Home() {
 
     <div className="scroll-smooth">
 
+      <FloatingButton/>
+      
       <Hero/>
-
+      
       <Phrase/>
 
       <About/>
