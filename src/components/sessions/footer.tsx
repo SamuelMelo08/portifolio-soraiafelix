@@ -3,7 +3,7 @@ export default function Footer() {
 
     return(
 
-        <div className="bg-[#B69C77] w-full flex justify-center items-center text-white py-8 px-5">
+        <div className="bg-sandstone w-full flex justify-center items-center text-white py-8 px-5">
 
             <div className="text-center">
                 ©2025 Soraia Felix. Todos os direitos reservados. 

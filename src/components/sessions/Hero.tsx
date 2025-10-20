@@ -3,7 +3,7 @@ import { Button } from "../ui/button"
 
 export default function Hero() {
   return (
-    <div className="w-full h-screen bg-[#fff8ed] shadow-[0_4px_15px_-1px_rgba(0,0,0,0.4)]" id="#">
+    <div className="w-full h-screen bg-cream shadow-[0_4px_15px_-1px_rgba(0,0,0,0.4)]" id="#">
     
       <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-5">
         
@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="text-center mt-5">
 
               <span className="text-[18px] md:text-[20px] leading-5">
-                {`"Negócios não crescem sozinhos —`} <br />
+                {`"Negócios não crescem sozinhos,`} <br />
                 {`eles crescem com líderes que crescem"`}
               </span>
 
