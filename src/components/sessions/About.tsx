@@ -28,6 +28,7 @@ export default function About() {
             <source src="/Soraia-Felix-Video.webm" type="video/webm" />
             Seu navegador não suporta o elemento de vídeo.
           </video>
+          
         </div>
 
       </div>
