@@ -8,7 +8,7 @@ export default function Services () {
 
     return (
 
-        <div className="w-full px-5 py-10 flex flex-col items-center justify-center bg-cream" id="services">
+        <div className="bg-cream w-full px-5 py-10 flex flex-col items-center justify-center" id="services">
             
             {/* Title */}
             <div>
