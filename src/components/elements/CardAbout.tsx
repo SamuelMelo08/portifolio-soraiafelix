@@ -9,7 +9,7 @@ export default function CardAbout() {
             <div className="flex flex-col justify-center items-center gap-2">
                 
                 <Image
-                    src="/image01.jpg"
+                    src="/image01.webp"
                     alt="Soraia photo"
                     width={150}
                     height={150}

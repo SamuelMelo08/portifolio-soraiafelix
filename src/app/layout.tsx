@@ -2,12 +2,6 @@ import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
 import "./globals.css";
 import NavbarDemo from "@/components/elements/NavBar";
-// import { Fraunces } from 'next/font/google'
-
-// const fraunces = Fraunces({
-//   subsets: ['latin'],
-//   weight: ['400', '700'],
-// })
 
 const heebo = Heebo({
   variable: "--font-heebo",
@@ -17,7 +11,28 @@ const heebo = Heebo({
 export const metadata: Metadata = {
   title: "Soraia Felix",
   description: "Portfólio de Soraia Felix, mentora comportamental dedicada a inspirar transformação pessoal e desenvolvimento emocional, com conteúdos, programas e insights para o crescimento individual.",
-  icons: { icon: "/favicon.ico"}
+  icons: { icon: "/favicon.ico"},
+  keywords: [
+    "Soraia Felix",
+    "mentoria comportamental",
+    "autoconhecimento",
+    "desenvolvimento pessoal",
+    "transformação de vida",
+    "coach comportamental",
+    "inteligência emocional",
+    "mentora",
+    "Soraia Felix mentora",
+    "empreendedorismo",
+  ],
+  openGraph: {
+    title: "Soraia Felix | Mentora Comportamental",
+    description:
+      "Descubra o portfólio de Soraia Felix, especialista em comportamento humano e desenvolvimento pessoal.",
+    url: "https://soraiafelix.com.br",
+    siteName: "Soraia Felix",
+    locale: "pt_BR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
