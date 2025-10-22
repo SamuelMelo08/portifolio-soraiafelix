@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="flex flex-col gap-5 justify-center items-center w-full">
           <div className="flex justify-center items-center">
             <Image
-              src={"/image01.jpg"}
+              src={"/image01.webp"}
               alt="Soraia photo"
               width={190}
               height={190}
