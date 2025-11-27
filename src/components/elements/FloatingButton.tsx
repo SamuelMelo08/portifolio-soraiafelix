@@ -23,7 +23,10 @@ export default function BasicSpeedDial() {
   };
 
   const handleDownload = () => {
-    console.log("Download iniciado!");
+    const link = document.createElement("a");
+    link.href = "/SoraiaFelix.pdf";
+    link.download = "SoraiaFelix.pdf";
+    link.click();
   };
 
   const actions = [
