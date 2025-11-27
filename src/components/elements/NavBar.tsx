@@ -39,7 +39,7 @@ export default function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="dark">Baixar portifólio</NavbarButton>
+              <NavbarButton download={true} href={"/SoraiaFelix.pdf"} variant="dark">Baixar portifólio</NavbarButton>
           </div>
         </NavBody>
 
@@ -67,15 +67,6 @@ export default function NavbarDemo() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="dark"
-                className="w-full"
-              >
-                Baixar Portifólio
-              </NavbarButton>
-            </div>
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
