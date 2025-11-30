@@ -3,7 +3,7 @@ import { Button } from "../ui/button"
 
 export default function Hero() {
   return (
-    <div className="w-full h-screen shadow-[0_4px_15px_-1px_rgba(0,0,0,0.4)] bg-cream" id="#">
+    <div className="w-full h-screen shadow-[0_4px_15px_-1px_rgba(0,0,0,0.4)] bg-[url('/Degradê-2.png')] bg-no-repeat bg-center bg-cover" id="#">
     
       <div className="relative z-10 flex flex-col justify-center items-center w-full h-full px-5">
         
