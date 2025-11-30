@@ -7,10 +7,29 @@ import DownloadIcon from "@mui/icons-material/Download";
 import Snackbar from "@mui/material/Snackbar";
 import Grow from "@mui/material/Grow";
 import SnackbarContent from "@mui/material/SnackbarContent";
-import { CheckCircleIcon } from "lucide-react";
+import { ArrowRight, CheckCircleIcon } from "lucide-react";
 
 export default function BasicSpeedDial() {
   const [openSnackbar, setOpenSnackbar] = React.useState(false);
+
+  const [hintOpen, setHintOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    
+    const delay = setTimeout(() => {
+      setHintOpen(true);
+
+  
+      const hide = setTimeout(() => {
+        setHintOpen(false);
+      }, 3500);
+
+      return () => clearTimeout(hide);
+    }, 1000); 
+
+    return () => clearTimeout(delay);
+  }, []);
+
 
   const handleShare = async () => {
     const baseUrl = window.location.origin;
@@ -39,7 +58,46 @@ export default function BasicSpeedDial() {
   };
 
   return (
-    <Box sx={{ position: "fixed", display: { xs: "block", lg: "none" } ,bottom: 16, right: 16, zIndex: 9999 }}>
+    <Box
+      sx={{
+        position: "fixed",
+        display: { xs: "block", lg: "none" },
+        bottom: 16,
+        right: 16,
+        zIndex: 9999,
+      }}
+    >
+   
+      <Grow
+          in={hintOpen}
+          style={{ transformOrigin: "100% 100%" }}
+        >
+        <Box
+          sx={{
+            position: "absolute",
+            right: 70,
+            bottom: 10,
+            backgroundColor: "#fff",
+            color: "#801c3c",
+            fontWeight: 600,
+            px: 2,
+            py: 1,
+            borderRadius: 5,
+            whiteSpace: "nowrap",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+            transform: "translate(10px, 10px)",
+            display: "flex",
+            gap: "4px",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Baixe o portfólio completo! <ArrowRight size={20}/>
+        </Box>
+      </Grow>
+
+
+      {/* BOTÃO */}
       <SpeedDial
         ariaLabel="Ações rápidas"
         icon={<DownloadIcon />}
@@ -62,6 +120,7 @@ export default function BasicSpeedDial() {
         ))}
       </SpeedDial>
 
+      {/* SNACKBAR */}
       <Snackbar
         open={openSnackbar}
         onClose={handleCloseSnackbar}
@@ -70,23 +129,22 @@ export default function BasicSpeedDial() {
         anchorOrigin={{ vertical: "top", horizontal: "center" }}
       >
         <SnackbarContent
-            message={
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                <CheckCircleIcon color="green" />
-                Link copiado com sucesso!
-                </Box>
-            }
-            sx={{
-                backgroundColor: "#fff",
-                color: "#000",
-                borderRadius: 2,
-                px: 3,
-                py: 1.5,
-                fontWeight: "semibold",
-            }}
+          message={
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+              <CheckCircleIcon color="green" />
+              Link copiado com sucesso!
+            </Box>
+          }
+          sx={{
+            backgroundColor: "#fff",
+            color: "#000",
+            borderRadius: 5,
+            px: 3,
+            py: 1.5,
+            fontWeight: "semibold",
+          }}
         />
       </Snackbar>
-
     </Box>
   );
 }
